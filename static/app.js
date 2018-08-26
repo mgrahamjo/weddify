@@ -104,11 +104,11 @@ const $ = selector => document.querySelector(selector) || document.createElement
 
 const $app = $('.app');
 
-window.togglePlaylist = (e, key) => {
+const togglePlaylist = (e, key) => {
+
+    $('.tab.active').classList.remove('active');
 
     if (e.currentTarget.classList.contains('active')) {
-
-        $('.tab.active').classList.remove('active');
 
         status.state = 'paused';
 
@@ -132,7 +132,7 @@ window.togglePlaylist = (e, key) => {
 
 };
 
-window.togglePlay = () => {
+const togglePlay = () => {
 
     if (status.state === 'paused') {
 
@@ -143,6 +143,8 @@ window.togglePlay = () => {
         send('play');
 
     } else {
+
+        $('.tab.active').classList.remove('active');
 
         status.state = 'paused';
 
@@ -156,7 +158,7 @@ window.togglePlay = () => {
 
 };
 
-window.seek = e => {
+const seek = e => {
 
     const pos = e.currentTarget.getBoundingClientRect();
 
@@ -172,23 +174,31 @@ window.seek = e => {
 
 };
 
-window.prev = () => send('prev');
+const prev = () => send('prev');
 
-window.next = () => send('next');
+const next = () => send('next');
+
+window.weddify = {
+    togglePlaylist,
+    togglePlay,
+    seek,
+    prev,
+    next
+};
 
 $app.innerHTML = `
 <div class="tabs">
-    ${Object.keys(playlists).map((key, i) => `<div class="tab" onclick="togglePlaylist(event, '${key}')"><i class="icon-play"></i> <strong>${i + 1}. ${playlists[key].label}</strong> <span>${playlists[key].info}</span></div>`).join('')}
+    ${Object.keys(playlists).map((key, i) => `<div class="tab" onclick="weddify.togglePlaylist(event, '${key}')"><i class="icon-play"></i> <strong>${i + 1}. ${playlists[key].label}</strong> <span>${playlists[key].info}</span></div>`).join('')}
 </div>
 <div class="info">
     <strong class="info-track"></strong>
     <div class="info-artist"></div>
 </div>
 <div class="controls">
-    <i class="icon-prev"></i>
-    <i class="icon-play" onclick="togglePlay()"></i>
-    <i class="icon-next" onclick="next()"></i>
-    <div class="progress-wrap" onclick="seek(event)">
+    <i class="icon-prev" onclick="weddify.prev()"></i>
+    <i class="icon-play" onclick="weddify.togglePlay()"></i>
+    <i class="icon-next" onclick="weddify.next()"></i>
+    <div class="progress-wrap" onclick="weddify.seek(event)">
         <div class="progress"></div>
     </div>
 </div>`;
