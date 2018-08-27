@@ -1,20 +1,10 @@
 const spotify = require('spotify-node-applescript');
 const serve = require('./server/serve');
+const read = require('fs').readFileSync;
 
 process.chdir(__dirname + '/static');
 
-const playlists = {
-    waitingMusic: 'spotify:user:1224314128:playlist:0FKBmEzljxo48hDDlC33v4',
-    processional: 'spotify:user:1249317563:playlist:46p1416o3bQZfQrf2ePUJf',
-    brideProcessional: 'spotify:user:1249317563:playlist:0fLHtf5v6yt6kLskPIAn9z',
-    recessional: 'spotify:user:1249317563:playlist:2fQeChEV3NEUE3LCTz7KUm',
-    cocktailHour: 'spotify:user:1224314128:playlist:20kmQFo1ygHgfuhPJs0yN1',
-    dinner: 'spotify:user:1224314128:playlist:4SgvaFXN7NbOMITlVCV9gg',
-    cakeCutting: 'spotify:user:1249317563:playlist:3kY91vYPzgVXuWr16TRnuv',
-    fatherDaughter: 'spotify:user:1249317563:playlist:5F306qPc8AYhuhnRDI9nJJ',
-    firstDance: 'spotify:user:1249317563:playlist:3oRw10tfLMUPyO6VL9mh40',
-    dancing: 'spotify:user:1224314128:playlist:7sz3QFwpmZ3LnxJN5mxioS'
-};
+const playlists = JSON.parse(read('playlists.json'));
 
 let timer;
 
@@ -30,7 +20,7 @@ const play = (send, id) => turnUpVolumeAnd(() => {
 
     if (id) {
         
-        spotify.playTrack(playlists[id], () => send(200));
+        spotify.playTrack(playlists[id].uri, () => send(200));
 
     } else {
         

@@ -13,6 +13,7 @@ const contentTypes = {
     woff2: 'application/octet-stream',
     css: 'text/css',
     js: 'application/javascript',
+    json: 'application/json',
     html: 'text/html'
 };
 

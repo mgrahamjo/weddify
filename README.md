@@ -15,10 +15,12 @@ It provides an idiot-proof web interface which allows you to click on a playlist
 Weddify is Mac only.
 
 - `git clone https://github.com/mgrahamjo/weddify && cd weddify && npm install`
+- Update `static/playlists.json` with the playlist information for your wedding.
+  - You can leave out the `tracks` lists for each playlist and run `node get-playlists` to auto-populate them.
 
 ## Usage:
 
-- Open Spotify.
+- Open Spotify
 - Run `node index`
 - Visit http://localhost:8000
 
