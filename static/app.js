@@ -8,13 +8,26 @@
     let status = {},
         fadingOut,
         playlists,
+        interval,
         $playBtn,
         $track,
         $artist,
         $progress;
 
-    const request = url => fetch(`/${url}`)
-        .then(res => res.json());
+    const request = url => {
+
+        clearInterval(interval);
+
+        return fetch(`/${url}`)
+            .then(res => {
+
+                interval = setInterval(getStatus, 2000);
+
+                return res.json();
+
+            });
+
+    };
 
     function updatePlayBtn() {
 
@@ -213,7 +226,7 @@
 
             $progress.classList.add('initialized');
 
-            setInterval(getStatus, 2000);
+            interval = setInterval(getStatus, 2000);
 
         });
 

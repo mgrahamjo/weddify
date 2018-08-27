@@ -26,6 +26,7 @@ Weddify is Mac only.
 
 ## Spotify settings for my wedding:
 
+- Disable display sleeping in System Preferences > Energy Saver
 - Turn off shuffle
 - In settings:
   - Turn off "Autoplay similar songs when your music ends."
