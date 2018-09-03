@@ -7,6 +7,7 @@
 			"spotify:track:6squXSZ3rl7tENdZiOuIEj",
 			"spotify:track:5g7rJvWYVrloJZwKiShqlS",
 			"spotify:track:6T8qnBbc2rxlWLiweD1e5M",
+			"spotify:track:0bAM9qivrntXnHyklRRx39",
 			"spotify:track:3raHUAfQyQ7Gv8yK62AVhV",
 			"spotify:track:0QQIhT6PtJ5glyn4HKNKQ6",
 			"spotify:track:4pCvaD8i0KBlJnwuvvx4pM",
@@ -18,11 +19,9 @@
 			"spotify:track:1Er5JMNcguoBMFXxwZ7BWH",
 			"spotify:track:08cXy6KUizaAelYXtcew3w",
 			"spotify:track:6h2NkoYugIYYb9jxKuvkXB",
-			"spotify:track:0bAM9qivrntXnHyklRRx39",
-			"spotify:track:61QSjD2Vi6wUMc0YwjPrj3",
 			"spotify:track:1eboKWbJggyePhuVYENWJF",
-			"spotify:track:3hg0fU3PEYhZ2zVjtrJ7Q1",
-			"spotify:track:6xetFi399audH6OFTpaQU5"
+			"spotify:track:61QSjD2Vi6wUMc0YwjPrj3",
+			"spotify:track:3hg0fU3PEYhZ2zVjtrJ7Q1"
 		]
 	},
 	"processional": {
@@ -30,7 +29,8 @@
 		"info": "Play as the wedding party walks down the isle",
 		"uri": "spotify:user:1249317563:playlist:46p1416o3bQZfQrf2ePUJf",
 		"tracks": [
-			"spotify:track:6uJwK7c62pfQrG9tTkHivn"
+			"spotify:track:6uJwK7c62pfQrG9tTkHivn",
+			"spotify:track:2B4Y9u4ERAFiMo13XPJyGP"
 		]
 	},
 	"brideProcessional": {
@@ -38,7 +38,8 @@
 		"info": "Play when Hannah walks down the isle",
 		"uri": "spotify:user:1249317563:playlist:0fLHtf5v6yt6kLskPIAn9z",
 		"tracks": [
-			"spotify:track:6xetFi399audH6OFTpaQU5"
+			"spotify:track:6xetFi399audH6OFTpaQU5",
+			"spotify:track:1i8FJaKwn3OjZCqGMUnoKG"
 		]
 	},
 	"recessional": {
@@ -79,7 +80,8 @@
 			"spotify:track:1uCW4X6aY2jsuLX7ZV8zNP",
 			"spotify:track:0efT4YKQLQx2YHbp6vgRX8",
 			"spotify:track:0UeYCHOETPfai02uskjJ3x",
-			"spotify:track:1s0uk3LmYulYhdiLlpxqzF"
+			"spotify:track:1s0uk3LmYulYhdiLlpxqzF",
+			"spotify:track:1P66qfPbuOf1nN8HXSpIEW"
 		]
 	},
 	"dinner": {
@@ -88,26 +90,24 @@
 		"uri": "spotify:user:1224314128:playlist:4SgvaFXN7NbOMITlVCV9gg",
 		"tracks": [
 			"spotify:track:1EzrEOXmMH3G43AXT1y7pA",
-			"spotify:track:4T6HLdP6OcAtqC6tGnQelG",
 			"spotify:track:5b7OgznPJJr1vHNYGyvxau",
-			"spotify:track:74jklVKHYTmNMp0baGm6FB",
+			"spotify:track:3KzgdYUlqV6TOG7JCmx2Wg",
 			"spotify:track:5MjAGtm2ihbBK9G30ZN3Ju",
 			"spotify:track:3zQdYlDWpPqVcqhYSul1va",
-			"spotify:track:3KzgdYUlqV6TOG7JCmx2Wg",
+			"spotify:track:74jklVKHYTmNMp0baGm6FB",
 			"spotify:track:71tjsDvB4EMJqNG8EMmFnb",
 			"spotify:track:1gcuhZPKmTYvn5VT5EZLR6",
 			"spotify:track:3wwXUFIYX044Tqiy3AFpLO",
-			"spotify:track:6pY1AWqj42B5pngwtgyTJ4",
 			"spotify:track:1Slwb6dOYkBlWal1PGtnNg",
-			"spotify:track:2OkQOKDrx75EWskLvub0fa",
-			"spotify:track:0bAM9qivrntXnHyklRRx39",
-			"spotify:track:5Twh6ngpSys0LG3xO2J3Ux",
-			"spotify:track:4Hhv2vrOTy89HFRcjU3QOx",
 			"spotify:track:2rJY1HlLcOXsQYMPUnhQxa",
+			"spotify:track:4Hhv2vrOTy89HFRcjU3QOx",
+			"spotify:track:2OkQOKDrx75EWskLvub0fa",
 			"spotify:track:1UH4viviUjZnS9aWgPGrk0",
+			"spotify:track:4I4aQGNJ2HufloNtB65nxR",
+			"spotify:track:5Twh6ngpSys0LG3xO2J3Ux",
+			"spotify:track:4T6HLdP6OcAtqC6tGnQelG",
 			"spotify:track:0zGLlXbHlrAyBN1x6sY0rb",
 			"spotify:track:5CMw1IWB7JOpUY9nk54n1K",
-			"spotify:track:4I4aQGNJ2HufloNtB65nxR",
 			"spotify:track:1xsY8IFXUrxeet1Fcmk4oC",
 			"spotify:track:2UMP7bjX5gXfMa2rOj9vxv",
 			"spotify:track:2cbic3TiUENlJX91y67ARR"
@@ -251,7 +251,8 @@
 			"spotify:track:25FTMokYEbEWHEdss5JLZS",
 			"spotify:track:7pYfyrMNPn3wtoCyqcTVoI",
 			"spotify:track:3V0PeMg2mhbYRtk9bioAwF",
-			"spotify:track:77NNZQSqzLNqh2A9JhLRkg"
+			"spotify:track:77NNZQSqzLNqh2A9JhLRkg",
+			"spotify:track:0F0MA0ns8oXwGw66B2BSXm"
 		]
 	}
 }
