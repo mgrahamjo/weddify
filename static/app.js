@@ -18,10 +18,16 @@
 
         clearInterval(interval);
 
+        interval = null;
+
         return fetch(`/${url}`)
             .then(res => {
 
-                interval = setInterval(getStatus, 2000);
+                if (!interval) {
+
+                    interval = setInterval(getStatus, 2000);
+
+                }
 
                 return res.json();
 
@@ -225,8 +231,6 @@
         getStatus().then(() => {
 
             $progress.classList.add('initialized');
-
-            interval = setInterval(getStatus, 2000);
 
         });
 
